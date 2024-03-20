@@ -1,7 +1,11 @@
 * {
     margin: 10px;
     padding: 10px;
-} 
+}
+
+html {
+    margin: 0px;
+}
 
 header {
     display: flex;
@@ -9,6 +13,8 @@ header {
     justify-content: space-between;
     background-color: rgb(30, 29, 29);
     color: white;
+    align-items: center;
+    margin: 0px;
 }
 
 header > div {
@@ -18,14 +24,20 @@ header > div {
 }
 
 header > nav {
-    background-color: rgb(168, 60, 60);
     color: white;
+}
+
+.Menu {
+    background-color: rgb(168, 60, 60);
+    height: 40px;
 }
 
 main {
     display: flex;
     flex-direction: row;
     align-items: center;
+    margin: 0px;
+    padding: 0px;
 }
 
 main > section {
@@ -39,10 +51,10 @@ aside {
     align-items: center;
     width: 30%;
     background-color: rgb(167, 105, 48);
+    margin: 0px;
 }
 
 aside > section {
-    
     height: 200px;
     width: 80%;
     background-color: rgb(168, 60, 60);
@@ -54,6 +66,7 @@ footer {
     justify-content: space-between;
     background-color: rgb(30, 29, 29);
     color: white;
+    margin: 0px;
 }
 
 footer > div {
@@ -73,11 +86,33 @@ hr {
     padding: 0;
 }
 
-@media screen and (max-width: 600px) {
-    
+@media screen and (max-width: 768px) {
+    header {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background-color: rgb(30, 29, 29);
+        color: white;
+        margin-bottom: 0px;
+        padding-bottom: 0px;
+    }
+
+    .Menu {
+        margin: 0px;
+        width: 100%;
+        justify-content: center;
+    }
+
+    footer {
+        flex-direction: row-reverse;
+    }
+
+    aside {
+        padding: 0px;
+    }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1024px) {
     main {
         display: flex;
         flex-direction: column;
@@ -95,5 +130,6 @@ hr {
         align-items: center;
         width: 100%;
         background-color: rgb(167, 105, 48);
+        padding: 0px;
     }
 }
