@@ -7,6 +7,8 @@ header {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    background-color: rgb(30, 29, 29);
+    color: white;
 }
 
 header > div {
@@ -15,21 +17,15 @@ header > div {
     align-items: center;
 }
 
+header > nav {
+    background-color: rgb(168, 60, 60);
+    color: white;
+}
+
 main {
     display: flex;
     flex-direction: row;
     align-items: center;
-}
-
-footer {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
-
-footer > div {
-    display: flex;
-    flex-direction: row;
 }
 
 main > section {
@@ -50,4 +46,29 @@ aside > section {
     height: 200px;
     width: 80%;
     background-color: rgb(168, 60, 60);
+}
+
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: rgb(30, 29, 29);
+    color: white;
+}
+
+footer > div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+footer > div > nav {
+    background-color :rgb(167, 105, 48);
+    margin: 0;
+    padding: 20;
+}
+
+hr {
+    border: 1px solid black;
+    padding: 0;
 }
